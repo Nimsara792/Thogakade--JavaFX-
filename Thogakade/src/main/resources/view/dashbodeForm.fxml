@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="364.0" prefWidth="602.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.dashbode.dashbodeFomeController">
+   <children>
+      <ImageView fitHeight="192.0" fitWidth="206.0" layoutX="91.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logoThogakade(dark).jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnInventory" layoutX="413.0" layoutY="38.0" mnemonicParsing="false" onAction="#clickInventory" prefHeight="29.0" prefWidth="114.0" style="-fx-background-color: black;" text="Inventory" textFill="#e79b0d">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCheckOrders" layoutX="419.0" layoutY="116.0" mnemonicParsing="false" onAction="#clickCheckOrders" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: black;" text="Check Orders">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7954545599041563" endY="0.9734848466786471" startX="0.7954545454545455" startY="0.946969696969697">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9052631855010986" green="0.606023371219635" blue="0.050292398780584335" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9058823585510254" green="0.6078431606292725" blue="0.05098039284348488" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="btnCustomers" layoutX="413.0" layoutY="197.0" mnemonicParsing="false" onAction="#clickCustomers" prefHeight="25.0" prefWidth="114.0" style="-fx-background-color: black;" text="Customers" textFill="#e79b0d">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPlaceOrder" layoutX="386.0" layoutY="279.0" mnemonicParsing="false" onAction="#clickPlaceOrder" prefHeight="30.0" prefWidth="179.0" style="-fx-background-color: black;" text="Place Order" textFill="#e79b0d">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Button>
+      <PointLight color="CHARTREUSE" layoutX="63.0" layoutY="88.0" lightOn="true" />
+   </children>
+</AnchorPane>
